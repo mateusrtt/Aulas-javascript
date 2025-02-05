@@ -19,7 +19,7 @@ function criarElemento(tag, classe, conteudo) {
     return elemento;
 }
 
-console.log(criarElemento('li', 'azul', 'Esse é o conteudo'))
+console.log(criarElemento('li', 'azul' , 'Esse é o conteudo'))
 
 // Crie uma nova função utilizando a anterior como base
 // essa nova função deverá sempre criar h1 com a
