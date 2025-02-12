@@ -73,6 +73,6 @@ const linguagens = ['html', 'css', 'js', 'php', 'python'];
 
 const cloneLinguagens = linguagens.slice();
 
-console.log(linguagens.pop())
+//console.log(linguagens.pop())
 console.log(linguagens)
 console.log(cloneLinguagens)
