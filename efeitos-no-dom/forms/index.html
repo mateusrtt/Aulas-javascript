@@ -47,13 +47,17 @@
 
   
   <script>
-  const contato = document.querySelector('#contato');
-  const dados = {};
-  function handleChange(event) {
-    dados[event.target.name] = event.target.value;
-    console.log(dados);
-  }
-  contato.addEventListener('change', handleChange);
+    const form = document.getElementById('contato');
+      function handleChange(event) {
+        const target = event.target;
+        if(!target.checkValidity()) {
+          target.classList.add('invalido');
+          target.nextElementSibling.innerText = target.validationMessage;
+        } else {
+          target.classList.remove('invalido');
+        }
+      }
+      form.addEventListener('change', handleChange);
  </script>
   
   
